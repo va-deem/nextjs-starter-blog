@@ -3,7 +3,8 @@
 * You can use this App component to keep state when * navigating between pages, for example.
 */
 import '../styles/global.css';
+import { AppProps } from 'next/app';
 
-export default function _app({ Component, pageProps }) {
+export default function _app({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
 }
